@@ -12,10 +12,7 @@ let package = Package(
             targets: ["IceCream"])
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/realm/realm-swift",
-            from: "10.42.2"
-        )
+        .package(url: "https://github.com/realm/realm-swift", .upToNextMajor(from: "20.0.0"))
     ],
     targets: [
         .target(
